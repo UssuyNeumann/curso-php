@@ -1,9 +1,10 @@
 <?php
 
 //variavel/array 
-$categorias = array("Infantil");
+$categorias = array();
 
-//
+//$categorias
+$categorias[] = "Infantil";
 $categorias[] = "Juvenil";
 $categorias[] = "Adulto";
 $categorias[] = "Sênior";
@@ -45,4 +46,3 @@ else
             echo "O nadador ".$nome. " compete na categoria ".$categorias[$i]."."; 
     } 
 }
-print_r($categorias);
