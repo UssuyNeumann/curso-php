@@ -45,3 +45,4 @@ else
             echo "O nadador ".$nome. " compete na categoria ".$categorias[$i]."."; 
     } 
 }
+print_r($categorias);
