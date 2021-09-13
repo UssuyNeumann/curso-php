@@ -13,10 +13,10 @@
 <p>Formulário para Inscrição de Competidores</p>
 <form action="script.php" method="POST">
     <?php
-        $error_msg = isset($_SESSION['mensagem-de-erro']) ? $_SESSION['mensagem-de-erro'] : '';
+        $errorMsg = isset($_SESSION['mensagem-de-erro']) ? $_SESSION['mensagem-de-erro'] : '';
         if(!empty(error_msg))
         {
-            echo $error_msg;
+            echo $errorMsg;
         }
     ?>
     <label for="nome">Nome: </label> <br> 
