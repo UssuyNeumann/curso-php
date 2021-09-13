@@ -13,11 +13,21 @@ $categorias[] = "Sênior";
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 
+//validações
+// valida campos vazios
 if(empty($nome) || empty($idade))
 {
-    echo 'Todos os campos devem ser preenchidos';
+    echo 'Todos os campos devem ser preenchidos!';
+    return;
+    //header("Location:index.php");
+}
+// valida tipo de dado $idade
+if(!is_numeric($idade))
+{
+    echo 'O campo Idade aceita apenas números!';
     return;
 }
+
 
 // condições e laços de repetição 
 if($idade >= 6 && $idade <= 12)
