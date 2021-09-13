@@ -1,9 +1,9 @@
 <?php
 
 //variavel/array 
-$categorias = array();
+$categorias = array("Infantil");
 
-$categorias[] = "Infantil";
+//
 $categorias[] = "Juvenil";
 $categorias[] = "Adulto";
 $categorias[] = "Sênior";
