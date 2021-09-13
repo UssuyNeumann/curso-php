@@ -1,7 +1,7 @@
 <?php
 
 //variavel/array 
-$categorias = array()
+$categorias = array();
 
 $categorias[] = "Infantil";
 $categorias[] = "Juvenil";
