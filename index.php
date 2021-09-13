@@ -19,6 +19,7 @@
             echo $msgError;
         }
     ?>
+    <br>
     <label for="nome">Nome: </label> <br> 
     <input type="text" name="nome" > <br><br> 
     <label for="idade">Idade: </label> <br> 
