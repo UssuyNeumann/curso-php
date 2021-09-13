@@ -46,4 +46,5 @@ else
             echo "O nadador ".$nome. " compete na categoria ".$categorias[$i]."."; 
     } 
 }
+// O -1 no count($categorias) evitou erro "Undefined offset".
 ?>
