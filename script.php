@@ -22,12 +22,14 @@ if(empty($nome) || empty($idade))
 {
     $_SESSION['mensagem-de-erro'] = 'Todos os campos devem ser preenchidos!';
     header('Location: index.php');
+    return;
 }
 // valida tipo de dado $idade
 else if(!is_numeric($idade))
 {
     $_SESSION['mensagem-de-erro'] = 'O campo Idade aceita apenas números!';
     header('Location: index.php');
+    return;
 }
 
 
