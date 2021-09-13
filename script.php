@@ -13,7 +13,7 @@ $categorias[] = "Sênior";
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 
-if(empty($nome) && empty($idade))
+if(empty($nome) || empty($idade))
 {
     echo 'Todos os campos devem ser preenchidos';
     return;
