@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +12,14 @@
 <body>
 <p>Formulário para Inscrição de Competidores</p>
 <form action="script.php" method="POST">
+    <?php
+        $error_msg = isset($_SESSION['mensagem-de-erro']) ? $_SESSION['mensagem-de-erro'] : '';
+    ?>
     <label for="nome">Nome: </label> <br> 
     <input type="text" name="nome" > <br><br> 
     <label for="idade">Idade: </label> <br> 
     <input type="text" name="idade" > <br><br> 
     <input type="submit" value="ENVIAR">
 </form>
-
 </body>
 </html>

@@ -1,5 +1,8 @@
 <?php
 
+//utilizando sessao para erros de usuario.
+session_start();
+
 //variavel/array 
 $categorias = array();
 
@@ -17,9 +20,8 @@ $idade = $_POST['idade'];
 // valida campos vazios
 if(empty($nome) || empty($idade))
 {
-    echo 'Todos os campos devem ser preenchidos!';
-    return;
-    //header("Location:index.php");
+    $_SESSION['mensagem-de-erro'] = 'Todos os campos devem ser preenchidos!';
+    header('location:index.php');
 }
 // valida tipo de dado $idade
 if(!is_numeric($idade))
