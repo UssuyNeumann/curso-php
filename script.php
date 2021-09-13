@@ -37,7 +37,7 @@ else if($idade >= 18 && $idade <= 60)
             echo "O nadador ".$nome. " compete na categoria ".$categorias[$i]"."; 
     } 
 }
-else if($idade >= 60 )
+else 
 {
     for($i = 0; $i <= count($categorias); $i++)
     {
@@ -45,5 +45,3 @@ else if($idade >= 60 )
             echo "O nadador ".$nome. " compete na categoria ".$categorias[$i]"."; 
     } 
 }
-else {}
-?>
