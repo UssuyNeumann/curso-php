@@ -21,7 +21,7 @@ $idade = $_POST['idade'];
 if(empty($nome) || empty($idade))
 {
     $_SESSION['mensagem-de-erro'] = 'Todos os campos devem ser preenchidos!';
-    header(string: 'location: index.php');
+    header('Location: index.php');
 }
 // valida tipo de dado $idade
 if(!is_numeric($idade))
