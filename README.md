@@ -1,2 +1,2 @@
 # curso-php
-Curso de PHP da Digital Innovation One
+Exercícios do curso de PHP da Digital Innovation One 
