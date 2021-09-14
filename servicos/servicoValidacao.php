@@ -1,6 +1,6 @@
 <?php
 
-function validaNome(string $nome)
+function validaNome(string $nome) : bool 
 {
     if(empty($nome))
     {
